@@ -10,6 +10,7 @@ class Notecard extends StatelessWidget {
   final int index;
   final Note note;
   final Function(int) onDelete;
+  final Function(Note) onEdit;
   final ThemeController themeController = Get.find<ThemeController>();
 
   Notecard({
@@ -17,6 +18,7 @@ class Notecard extends StatelessWidget {
     required this.index,
     required this.note,
     required this.onDelete,
+    required this.onEdit,
   });
 
   @override
@@ -26,10 +28,7 @@ class Notecard extends StatelessWidget {
 
     return Obx(
       () => GestureDetector(
-        onTap:
-            () => Get.to(
-              () => NoteDetailsPage(initialNote: note, isEditing: true),
-            ),
+        onTap: () => onEdit(note),
         child: Container(
           height: 140,
           width: double.infinity,

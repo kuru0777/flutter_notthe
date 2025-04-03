@@ -54,6 +54,30 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  void _editNote(Note note) async {
+    final result = await Get.to(
+      () => NoteDetailsPage(initialNote: note, isEditing: true),
+    );
+    if (result != null && result is Note) {
+      try {
+        await _databaseService.updateNote(result);
+        setState(() {}); // Yeniden yükleme tetikle
+        Get.snackbar(
+          'Başarılı',
+          'Not güncellendi',
+          snackPosition: SnackPosition.BOTTOM,
+        );
+      } catch (e) {
+        debugPrint('Not güncellenirken hata: $e');
+        Get.snackbar(
+          'Hata',
+          'Not güncellenirken bir sorun oluştu',
+          snackPosition: SnackPosition.BOTTOM,
+        );
+      }
+    }
+  }
+
   void _deleteNote(int index, Note note) async {
     try {
       await _databaseService.deleteNote(note.title);
@@ -122,6 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 index: index,
                 note: notes[index],
                 onDelete: (index) => _deleteNote(index, notes[index]),
+                onEdit: (note) => _editNote(note),
               );
             },
           );
