@@ -56,16 +56,17 @@ Notlar aşağıdaki bilgileri içerir:
 ## Ekran Görüntüleri
 
 ### Ana Ekran
-![Ana Ekran](asset/screenshots/md1.jpg)
-## Karanlık Tema
-![Ana Ekran Karanlık Tema](asset/screenshots/md2.jpg)
+<img src="asset/screenshots/md1.jpg" width="300">
+
+### Karanlık Tema
+<img src="asset/screenshots/md2.jpg" width="300">
 
 ### Not Ekleme/Düzenleme
-![Not Ekleme](asset/screenshots/md5.jpg)
-![Not Düzenleme](asset/screenshots/md3.jpg)
-## Karanlık Tema
-![Not Ekleme Karanlık Tema](asset/screenshots/md4.jpg)
+<img src="asset/screenshots/md5.jpg" width="300">
+<img src="asset/screenshots/md3.jpg" width="300">
 
+### Karanlık Tema
+<img src="asset/screenshots/md4.jpg" width="300">
 
 ### Kategori Yönetimi
-![Kategori Yönetimi](asset/screenshots/md4.jpg)
+<img src="asset/screenshots/md4.jpg" width="300">
