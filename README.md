@@ -52,3 +52,20 @@ Notlar aşağıdaki bilgileri içerir:
 - Flutter Sürümü: 3.x
 - GetX Sürümü: 4.x
 - SQLite Sürümü: 2.x
+
+## Ekran Görüntüleri
+
+### Ana Ekran
+![Ana Ekran](assets/screenshots/md1.jpg)
+## Karanlık Tema
+![Ana Ekran Karanlık Tema](assets/screenshots/md2.jpg)
+
+### Not Ekleme/Düzenleme
+![Not Ekleme](assets/screenshots/md5.jpg)
+![Not Düzenleme](assets/screenshots/md3.jpg)
+## Karanlık Tema
+![Not Ekleme Karanlık Tema](assets/screenshots/md4.jpg)
+
+
+### Kategori Yönetimi
+![Kategori Yönetimi](assets/screenshots/md4.jpg)

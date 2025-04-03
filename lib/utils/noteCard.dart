@@ -30,7 +30,7 @@ class Notecard extends StatelessWidget {
       () => GestureDetector(
         onTap: () => onEdit(note),
         child: Container(
-          height: 140,
+          height: 240,
           width: double.infinity,
           margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: AppStyles.getNoteCardDecoration(
@@ -89,7 +89,7 @@ class Notecard extends StatelessWidget {
                           ),
                           fontSize: 12,
                         ),
-                        maxLines: 3,
+                        maxLines: 10,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
